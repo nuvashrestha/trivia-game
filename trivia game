@@ -1,0 +1,40 @@
+import TriviaQns
+
+
+def main():
+    player1_scores = 0
+    player2_scores = 0
+    player = ''
+
+    questions = TriviaQns.getquestions()
+
+    for i in range(10):
+        if 1 % 2 == 0:
+            player = 'first'
+        else:
+            player = 'second'
+        print('Question for the', player, 'player.')
+
+    #access current question
+        print(questions[i])
+        useranswer = int(input('Enter your solution (a number between 1 and 4): '))
+        if useranswer == questions[i].getcorrecanswer():
+            if player == 'first':
+                player1_scores += 1
+            else:
+                player2_scores += 1
+            print('This is the correct answer.')
+            print()
+        else:
+            print('That is incorrect. The correct answer is', questions[i].getcorrecanswer())
+            print()
+
+        print(f'The first player earned', player1_scores, 'points.')
+        print(f'The second player earned', player2_scores, 'points.')
+        if player1_scores == player2_scores:
+            print('Its a tie.')
+        elif player1_scores > player2_scores:
+            print('The first player wins the game.')
+        else:
+            print('The second player wins the game.')
+main()
