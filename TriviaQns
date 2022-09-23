@@ -1,0 +1,75 @@
+import Question
+
+def getquestions():
+
+    questions = []
+
+    #create questions and add to list
+    question1 = Question.QuestionClass('How many days are in a'+\
+                               'lunar year?', '354', '365', '243', '379', 1)
+    questions.append(question1)
+
+    question2 = Question.QuestionClass('What is the largest planet?',\
+                               'Mars',
+                               'Jupiter',
+                               'Earth',
+                               'Pluto',
+                               2)
+    questions.append(question2)
+    question3 = Question.QuestionClass('What is the largest kind of whale?',
+                               'Orca whale',
+                               'Humpback whale',
+                               'Beluga whale',
+                               'Blue whale',
+                               4)
+    questions.append(question3)
+    question4 = Question.QuestionClass('Which dinosaur could fly?',
+                               'Triceratops',
+                               'Tyrannosaurus Rex',
+                               'Pterandon',
+                               'Diplodocus',
+                               3)
+    questions.append(question4)
+    question5 = Question.QuestionClass('Which of these Winnie the Pooh characters is a donkey?',
+                               'Pooh',
+                               'Eeyore',
+                               'Piglet',
+                               'Kanga',
+                               2)
+    questions.append(question5)
+    question6 = Question.QuestionClass('What is the hottest planet?',
+                               'Mars',
+                               'Jupiter',
+                               'Earth',
+                               'Pluto',
+                               4)
+    questions.append(question6)
+    question7 = Question.QuestionClass('Which dinosaur had the largest brain compared to body size?',
+                               'Troodon',
+                               'Stegosaurus',
+                               'Ichthysaurus',
+                               'Giganoraptor',
+                               1)
+    questions.append(question7)
+    question8 = Question.QuestionClass('What is the largest type of penguin?',
+                              'Chinstrap penguins',
+                              'Macaroni penguins',
+                              'Emperor penguins',
+                              'White-flippered penguins',
+                              3)
+    questions.append(question8)
+    question9 = Question.QuestionClass("Which children's story character is a monkey?",
+                              'Winnie the Pooh',
+                              'Curious George',
+                              'Horton',
+                              'Goofy',
+                              2)
+    questions.append(question9)
+    question10 = Question.QuestionClass('How long is a year on Mars?',
+                              '550 Earth days',
+                              '498 Earth days',
+                              '126 Earth days',
+                              '687 Earth days',
+                              4)
+    questions.append(question10)
+    return questions
