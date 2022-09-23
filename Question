@@ -1,0 +1,31 @@
+#Nuva Shrestha
+
+class QuestionClass:
+    def __init__(self, question, answer1, answer2, answer3, answer4, correctanswer):
+        self.__question = question
+        self.__answer1 = answer1
+        self.__answer2 = answer2
+        self.__answer3 = answer3
+        self.__answer4 = answer4
+        self.__correctanswer = correctanswer
+
+    def getquestion(self):
+        return self.__question
+    def getanswer1(self):
+        return self.__answer1
+    def getanswer2(self):
+        return self.__answer2
+    def getanswer3(self):
+        return self.__answer3
+    def getanswer4(self):
+        return self.__answer4
+    def getcorrecanswer(self):
+        return self.__correctanswer
+
+    def __str__(self):
+        result = self.getquestion() + '\n' + \
+        '1. ' + self.getanswer1() + '\n' + \
+        '2. ' + self.getanswer2() + '\n' + \
+        '3. ' + self.getanswer3() + '\n' + \
+        '4. ' + self.getanswer4()
+        return result
